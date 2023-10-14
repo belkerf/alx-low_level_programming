@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - the entry poit of the program
+ *Return: always 0(success)
+ */
 int main(void)
 {
 	int i = 97;
@@ -9,4 +13,5 @@ int main(void)
 		i++;
 	}
 	putchar('\n');
+	return (0);
 }
