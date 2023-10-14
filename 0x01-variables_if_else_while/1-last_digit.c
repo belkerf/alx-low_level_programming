@@ -4,6 +4,10 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ *main - the starting of the program
+ *Return: always 0(success)
+ */
 int main(void)
 {
 	int n;
@@ -15,13 +19,13 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, (n % 10));
 	}
-	else if ((n % 10)== 0)
+	else if ((n % 10) == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, (n % 10));
 	}
 	else if (((n % 10) < 6) && ((n % 10) != 0))
 	{
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, (n % 10));
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, (n % 10));
 	}
 	return (0);
 }
