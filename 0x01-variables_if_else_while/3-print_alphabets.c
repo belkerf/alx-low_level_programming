@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int i = 61;
+	int i = 97;
 
 	/*printing lowercase charachers*/
 	while (i <= 122)
