@@ -19,7 +19,7 @@ int print_last_digit(int c)
 		}
 		return (c);
 	}
-	else if (c < 0)
+/*	else if (c < 0)
 	{
 		c = c * (-1);
 		if ((c < 10) && (c >= 0))
@@ -35,5 +35,5 @@ int print_last_digit(int c)
 			}
 			return (c);
 		}
-	}
+	}*/
 }
