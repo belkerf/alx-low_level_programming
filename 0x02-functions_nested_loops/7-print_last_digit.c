@@ -4,10 +4,11 @@
  * Return: the last digit.
  * @c : the digit.
  */
-void print_last_digit(int c)
+int print_last_digit(int c)
 {
 	if ((c < 10) && (c >= 0))
 	{
+		_putchar('0' + c);
 		return (c);
 	}
 	else if (c >= 10)
@@ -17,6 +18,7 @@ void print_last_digit(int c)
 		{
 			c = c % 10;
 		}
+		_putchar('0' + c);
 		return (c);
 	}
 	else if (c < 0)
@@ -24,6 +26,7 @@ void print_last_digit(int c)
 		c = c * (-1);
 		if ((c < 10) && (c >= 0))
 		{
+			_putchar('0' + c);
 			return (c);
 		}
 		else if (c >= 10)
@@ -33,6 +36,7 @@ void print_last_digit(int c)
 			{
 				c = c % 10;
 			}
+			_putchar('0' + c);
 			return (c);
 		}
 	}
