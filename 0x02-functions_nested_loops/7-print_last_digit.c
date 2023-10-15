@@ -6,11 +6,11 @@
  */
 int print_last_digit(int c)
 {
-	int a, b;
+	int a;
 
 	if ((c < 10) && (c >= 0))
 	{
-		_putchar('0' + c);
+		return (c);
 	}
 	else if (c >= 10)
 	{
@@ -19,14 +19,14 @@ int print_last_digit(int c)
 		{
 			a = c % 10;
 		}
-		_putchar('0' + a);
+		return (a);
 	}
 	else if (c < 0)
 	{
 		c = c * (-1);
 		if ((c < 10) && (c >= 0))
 		{
-			_putchar('0' + c);
+			return (c);
 		}
 		else if (c >= 10)
 		{
@@ -35,7 +35,7 @@ int print_last_digit(int c)
 			{
 				a = c % 10;
 			}
-			_putchar('0' + a);
+			return (a);
 		}
 	}
 }
