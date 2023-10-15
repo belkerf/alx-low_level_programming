@@ -6,20 +6,18 @@
  */
 int print_last_digit(int c)
 {
-	int a;
-
 	if ((c < 10) && (c >= 0))
 	{
 		return (c);
 	}
 	else if (c >= 10)
 	{
-		a = c % 10;
-		while (a > 9)
+		c = c % 10;
+		while (c > 9)
 		{
-			a = c % 10;
+			c = c % 10;
 		}
-		return (a);
+		return (c);
 	}
 	else if (c < 0)
 	{
@@ -30,12 +28,12 @@ int print_last_digit(int c)
 		}
 		else if (c >= 10)
 		{
-			a = c % 10;
-			while (a > 9)
+			c = c % 10;
+			while (c > 9)
 			{
-				a = c % 10;
+				c = c % 10;
 			}
-			return (a);
+			return (c);
 		}
 	}
 }
