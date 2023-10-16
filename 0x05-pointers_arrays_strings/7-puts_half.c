@@ -5,10 +5,11 @@
  */
 void puts_half(char *str)
 {
-	int i = 1, b;
+	int i = 0, b;
 
-	while (str[i])
+	while (*str)
 	{
+		str++;
 		i++;
 	}
 	if ((i / 2) == 0)
