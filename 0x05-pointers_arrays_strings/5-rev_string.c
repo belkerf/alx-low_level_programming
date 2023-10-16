@@ -14,18 +14,18 @@ void rev_string(char *s)
 		len++;
 		s++;
 	}
-	/*reverse s into str*/
+	/*reverse s into st*/
 	while (i < len)
 	{
 		k = (len - 1 - i);
-		str[i] = s[k];
+		st[i] = s[k];
 		i++;
 	}
 	i = 0;
-	/*put str into s*/
+	/*put st into s*/
 	while (i < len)
 	{
-		s[i] = str[i];
+		s[i] = st[i];
 		i++;
 	}
 }
