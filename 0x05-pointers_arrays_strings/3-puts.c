@@ -12,7 +12,7 @@ void _puts(char *str)
 	len = _strlen(str);
 	while (a < len)
 	{
-		c = *str[a];
+		c = str[a];
 		_putchar(c);
 		a++;
 	}
