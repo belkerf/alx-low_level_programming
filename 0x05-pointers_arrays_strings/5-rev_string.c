@@ -5,29 +5,27 @@
  */
 void rev_string(char *s)
 {
-	char str[3000];
-	int a = 0, i = 0, k;
+	char st[1000];
+	int len = 0, i = 0, k;
 
 	/*finding the length of s*/
 	while (*s)
 	{
-		a++;
+		len++;
 		s++;
 	}
-	a--;
 	/*reverse s into str*/
-	while (i <= a)
+	while (i < len)
 	{
-		k = (a - i);
+		k = (len - 1 - i);
 		str[i] = s[k];
 		i++;
 	}
-	i--;
-	a = 0;
+	i = 0;
 	/*put str into s*/
-	while (a <= i)
+	while (i < len)
 	{
-		s[a] = str[a];
-		a++;
+		s[i] = str[i];
+		i++;
 	}
 }
