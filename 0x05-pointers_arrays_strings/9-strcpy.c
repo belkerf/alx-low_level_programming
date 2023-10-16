@@ -9,6 +9,8 @@
  */
 char *_strcpy(char *dest, char *src)
 {
+	char *poi = &dest;
+
 	while (*src)
 	{
 		*dest = *src;
@@ -19,5 +21,5 @@ char *_strcpy(char *dest, char *src)
 			*dest = '\0';
 		}
 	}
-	return (dest);
+	return (oi);
 }
