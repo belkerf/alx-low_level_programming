@@ -11,17 +11,17 @@ void rev_string(char *s)
 	while (*s)
 	{
 		s++;
-	}
-	s--;
-	while (*s)
-	{
-		str[a] = *s;
-		s--;
 		a++;
 	}
-	while(i < a)
+	while (i < a)
 	{
-		s[i] = str[i];
+		str[i] = s[a - 1 - i];
 		i++;
+	}
+	a = 0;
+	while(a <= i)
+	{
+		s[a] = str[i - a];
+		a++;
 	}
 }
