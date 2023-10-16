@@ -9,8 +9,9 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char **poi = &dest;
+	char **poi;
 
+	poi = *dest;
 	while (*src)
 	{
 		*dest = *src;
