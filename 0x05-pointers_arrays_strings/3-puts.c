@@ -7,8 +7,9 @@
 void _puts(char *str)
 {
 	int i = 0, a;
-	a = _strlen(str);
 	char c;
+
+	a = _strlen(*str);
 
 	while (i < a)
 	{
