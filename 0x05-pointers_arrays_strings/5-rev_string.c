@@ -9,10 +9,9 @@ void rev_string(char *s)
 	int len = 0, i = 0, k;
 
 	/*finding the length of s*/
-	while (*s)
+	while (s[len])
 	{
 		len++;
-		s++;
 	}
 	/*reverse s into st*/
 	while (i < len)
