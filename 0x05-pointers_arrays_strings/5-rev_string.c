@@ -8,12 +8,14 @@ void rev_string(char *s)
 	char str[3000];
 	int a = 0, i = 0, k;
 
+	/*finding the length of s*/
 	while (*s)
 	{
 		a++;
 		s++;
 	}
 	a--;
+	/*reverse s into str*/
 	while (i <= a)
 	{
 		k = (a - i);
@@ -22,6 +24,7 @@ void rev_string(char *s)
 	}
 	i--;
 	a = 0;
+	/*put str into s*/
 	while (a <= i)
 	{
 		s[a] = str[a];
