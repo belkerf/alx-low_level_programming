@@ -6,11 +6,9 @@
  */
 void puts2(char *str)
 {
-	int i = 0;
-
 	while (*str)
 	{
-		_putchar[*str];
+		_putchar(*str);
 		str = str + 2;
 	}
 }
