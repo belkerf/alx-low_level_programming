@@ -11,10 +11,7 @@ int _atoi(char *s)
 
 	while (s[i])
 	{
-		if ((s[i]) == '0')
-		{
-
-		}
 		i++;
 	}
+	return (0);
 }
