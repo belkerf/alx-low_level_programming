@@ -4,7 +4,7 @@
  * followed by a new line.
  * @s : the string we want to reverse.
  */
-/*this function took a text and print it in reverse within 4 steps*/
+/*this function took a text and print it in reverse within 2 steps*/
 void print_rev(char *s)
 {
 	/* I) the loop run until the cursor after the last charachter*/
