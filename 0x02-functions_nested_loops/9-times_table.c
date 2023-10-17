@@ -14,11 +14,14 @@ void times_table(void)
 			c = a * b;
 			if (c <= 9)
 			{
+				if (b > 0)
+				{
+					_putchar(' ');
+				}
 				_putchar('0' + c);
 				if (b < 9)
 				{
 					_putchar(',');
-					_putchar(' ');
 					_putchar(' ');
 				}
 			}
