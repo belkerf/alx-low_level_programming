@@ -15,6 +15,7 @@ void jack_bauer(void)
 			{
 				b = 100;
 				a = 100;
+				c = 100;
 			}
 			for (c = 0; c < 6; c++)
 			{
