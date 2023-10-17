@@ -17,16 +17,19 @@ void jack_bauer(void)
 				a = 100;
 				c = 100;
 			}
-			for (c = 0; c < 6; c++)
+			else
 			{
-				for (d = 0; d <= 9; d++)
+				for (c = 0; c < 6; c++)
 				{
-					_putchar('0' + a);
-					_putchar('0' + b);
-					_putchar(':');
-					_putchar('0' + c);
-					_putchar('0' + d);
-					_putchar('\n');
+					for (d = 0; d <= 9; d++)
+					{
+						_putchar('0' + a);
+						_putchar('0' + b);
+						_putchar(':');
+						_putchar('0' + c);
+						_putchar('0' + d);
+						_putchar('\n');
+					}
 				}
 			}
 		}
