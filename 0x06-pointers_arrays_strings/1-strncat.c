@@ -8,12 +8,22 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
+	int i = 0, j = 0, k = 0;
 
 	/*finding the end of dest*/
 	while (dest[i])
 	{
 		i++;
+	}
+	/*finding the end of src*/
+	while (src[k])
+	{
+		k++;
+	}
+	/*fix the number of the bytes n if is more than we have in src*/
+	if (n > k)
+	{
+		n = k;
 	}
 	/*adding n byte from src to dest*/
 	while (j < n)
