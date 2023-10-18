@@ -28,7 +28,10 @@ char *_strncpy(char *dest, char *src, int n)
 				j++;
 			}
 			else
+			{
 				k++;
+				j++;
+			}
 		}
 		else if (k > i)
 		{
