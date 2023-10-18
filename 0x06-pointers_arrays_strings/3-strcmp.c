@@ -9,8 +9,8 @@ int _strcmp(char *s1, char *s2)
 {
 	int i = 0, j = 0;
 
-	/*first of all we check if s1 is found*/
-	if (s1[0])
+	/*first of all we check if s1 and are found*/
+	if ((s1[0] != '\0') && (s2[0] != '\0'))
 	{
 		/*A) counting the size of s1 and s2*/
 		while (s1[i])
