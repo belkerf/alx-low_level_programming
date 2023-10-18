@@ -8,23 +8,34 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
+	int i = 0, j = 0, k = 0;
 
 	/*counting the number of index in src*/
 	while (src[i])
 	{
 		i++;
 	}
-	/*checking that the number n is less or equal to bytes in src*/
-	if (n > i)
-	{
-		n = i;
-	}
 	/*coping n bites from src to dest*/
-	while (j < n)
+	while (k < n)
 	{
-		dest[j] = src[j];
-		j++;
+	/*checking that we will not copying a '\0' in the first bites */
+		if (k <= i)
+		{
+			if (src[j] != '\0')
+			{
+				dest[j] = src[k];
+				k++;
+				j++;
+			}
+			else
+				k++;
+		}
+		else if (k > i)
+		{
+			dest[j] = '\0';
+			k++;
+			j++;
+		}
 	}
 	/*returning the result*/
 	return (dest);
