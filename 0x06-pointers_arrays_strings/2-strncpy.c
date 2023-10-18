@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 	while (k < n)
 	{
 	/*checking that we will not copying a '\0' in the first bites */
-		if (k <= i)
+		if (k < i)
 		{
 			if (src[j] != '\0')
 			{
@@ -33,7 +33,7 @@ char *_strncpy(char *dest, char *src, int n)
 				j++;
 			}
 		}
-		else if (k > i)
+		else if (k >= i)
 		{
 			dest[j] = '\0';
 			k++;
