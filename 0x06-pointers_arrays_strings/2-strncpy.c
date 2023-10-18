@@ -10,17 +10,19 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0, j = 0, k = 0;
 
-	/*counting the number of index in src*/
+	/*A) counting the number of index in src*/
 	while (src[i])
 	{
 		i++;
 	}
-	/*coping n bites from src to dest*/
+	/*B) coping n bites from src to dest*/
 	while (k < n)
 	{
-	/*checking that we will not copying a '\0' in the first bites */
+	/*C) checking if the n is less than the number of src*/
+		/*C-I) case 1 if n less we copy*/
 		if (k < i)
 		{
+	/*D) checkin that we will not copying '\0' in the first bites */
 			if (src[j] != '\0')
 			{
 				dest[j] = src[k];
@@ -33,6 +35,7 @@ char *_strncpy(char *dest, char *src, int n)
 				j++;
 			}
 		}
+		/*C-II) case 2 if n equale or more we fill the desrt with '\0'*/
 		else if (k >= i)
 		{
 			dest[j] = '\0';
@@ -40,6 +43,6 @@ char *_strncpy(char *dest, char *src, int n)
 			j++;
 		}
 	}
-	/*returning the result*/
+	/*E) returning the result*/
 	return (dest);
 }
