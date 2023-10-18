@@ -7,18 +7,19 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, j = 0;
+	int i = 0,j = 0;
 
+	/*find the ind of dest*/
 	while (dest[i])
 	{
-		if (dest[i] == '\0')
-		{
-			while (src[j])
-			{
-				dest[i + j] = src[j];
-			}
-		}
 		i++;
 	}
+	while (src[j])
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
 	return (dest);
 }
