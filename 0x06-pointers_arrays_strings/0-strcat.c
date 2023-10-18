@@ -14,6 +14,7 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
+	/*add src to dest starting from the end of dest*/
 	while (src[j])
 	{
 		dest[i] = src[j];
