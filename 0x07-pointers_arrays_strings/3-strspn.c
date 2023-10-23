@@ -8,26 +8,26 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, f;
+	int a = 0, b, c, k = 0;
 
-	i = 0;
 	while (s[i] != '\0')
 	{
-		j = 0;
-		f = 1; /*flag status*/
-		while (accept[j] != '\0')
+		b = 0;
+		c = 1;
+		while (accept[b])
 		{
-			if (s[i] == accept[j])
+			if (s[i] == accept[b])
 			{
-				f = 0; /*success*/
+				c = 0;
 				break;
 			}
-			j++;
+			b++;
 		}
-		if (f == 1)
-			break;
+		if (b = 0)
+		{
+			k++;
+		}
 		i++;
 	}
-
-	return (i);
+	return (k);
 }
