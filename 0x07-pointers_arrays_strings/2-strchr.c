@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - function that locates a character in a string.
  * Return: Returns a pointer to the first occurrence of
@@ -10,7 +11,7 @@
 char *_strchr(char *s, char c)
 {
 	int k = 0;
-	int f = NULL;
+	void *f = NULL;
 
 	while (*s)
 	{
@@ -18,10 +19,15 @@ char *_strchr(char *s, char c)
 		{
 			return (s);
 			k = 1;
-			s = s + 1000;
+			
 		}
-		s++;
+		if (k == 0)
+			s++;
+		else
+			break;
 	}
-	if (k == 0)
-		return (NULL);
+	if (k == 1)
+		return (f);
+	else
+		return (s);
 }
