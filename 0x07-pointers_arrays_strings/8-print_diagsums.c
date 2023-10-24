@@ -8,15 +8,14 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, k = 0, l = 0;
+	int i, k = 0, l = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < (size*size); i++)
 	{
-		k = k + a[i][i];
-	}
-	for (i = size - 1; j >= 0; j--)
-	{
-		l = l + a[j][j];
+		if (i % (size + 1) == 0)
+			k = k + (a[i]);
+		if (i % (size -1) == 0 && i != 0 && i < size*size -1)
+			l += a[i];
 	}
 	printf("%d, %d", k, l);
 }
