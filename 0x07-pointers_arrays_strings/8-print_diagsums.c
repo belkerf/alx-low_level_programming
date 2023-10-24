@@ -17,5 +17,5 @@ void print_diagsums(int *a, int size)
 		if (i % (size -1) == 0 && i != 0 && i < size*size -1)
 			l += a[i];
 	}
-	printf("%d, %d", k, l);
+	printf("%d, %d\n", k, l);
 }
