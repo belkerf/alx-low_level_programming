@@ -10,11 +10,11 @@ void print_diagsums(int *a, int size)
 {
 	int i, k = 0, l = 0;
 
-	for (i = 0; i < (size*size); i++)
+	for (i = 0; i < (size * size); i++)
 	{
 		if (i % (size + 1) == 0)
 			k = k + (a[i]);
-		if (i % (size -1) == 0 && i != 0 && i < size*size -1)
+		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
 			l += a[i];
 	}
 	printf("%d, %d\n", k, l);
