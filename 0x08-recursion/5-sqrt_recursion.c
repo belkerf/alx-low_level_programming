@@ -14,8 +14,7 @@ int check(int a, int b)
 	{
 		return(-1);
 	}
-	else
-		check(a + 1, b);
+	return (check(a + 1, b));
 }
 int _sqrt_recursion(int n)
 {
