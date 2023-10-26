@@ -8,7 +8,7 @@ int check(char *a, int b)
 	else if (*a != '\0')
 	{
 		a++;
-		return (check(a, b + 1);
+		return (check(a, b + 1));
 	}
 }
 /**
