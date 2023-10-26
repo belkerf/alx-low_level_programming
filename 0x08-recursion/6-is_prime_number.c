@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * check - function that check if b is prime number.
+ * Return: 1 is yes 0 if not.
+ * @a : number checker.
+ * @b : the number we check.
+ */
 int check(int a, int b)
 {
 	if (b % a == 0 && a != b)
