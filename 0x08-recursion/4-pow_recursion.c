@@ -18,10 +18,13 @@ int _pow_recursion(int x, int y)
 	{
 		i = 1;
 	}
-	else if (y > 0)
+	else if (y == 1)
 	{
 		i = x;
-		i = i * _pow_recursion(x, y--);
+	}
+	else if (y > 1)
+	{
+		i = x * _pow_recursion(x, y--);
 	}
 	return (i);
 }
