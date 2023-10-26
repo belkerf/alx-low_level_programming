@@ -10,7 +10,7 @@ int check(int a, int b)
 	{
 		return (a);
 	}
-	else (a * a > b)
+	else if (a * a > b)
 	{
 		return(-1);
 	}
