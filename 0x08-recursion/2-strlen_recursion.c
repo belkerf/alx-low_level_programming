@@ -1,7 +1,7 @@
 #include "main.h"
 int check(char **a, int b)
 {
-	if (a[b] && a[b] != '\0')
+	if (*a[b] && *a[b] != '\0')
 	{
 		return (check(a, ++b));
 	}
