@@ -7,8 +7,7 @@ int check(char *a, int b)
 	}
 	else if (*a != '\0')
 	{
-		a++;
-		return (check(a, b + 1));
+		return (check((a + 1), (b + 1)));
 	}
 }
 /**
@@ -18,5 +17,6 @@ int check(char *a, int b)
  */
 int _strlen_recursion(char *s)
 {
+
 	return (check(char *s, 1));
 }
