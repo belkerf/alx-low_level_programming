@@ -12,7 +12,7 @@ int factorial(int n)
 	}
 	else if (n > 0)
 	{
-		factorila(n) = n * factorial(n - 1);
+		factorial(n) = n * factorial(n - 1);
 	}
 	else if (n < 0)
 		return (-1);
