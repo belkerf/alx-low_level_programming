@@ -14,14 +14,14 @@ int _sqrt_recursion(int n)
 	}
 	else if (n == 0)
 	{
-		return (0)
+		return (0);
 	}
 	else if (n > 0 && i <= n)
 	{
 		j = n / i;
 		if (n % i == 0 && j == i)
 		{
-			return (i)
+			return (i);
 		}
 		else
 		{
