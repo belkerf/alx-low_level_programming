@@ -1,11 +1,11 @@
 #include "main.h"
 int check(int a, int b)
 {
-	if (b % a == 0)
+	if (b % a == 0 && a != b)
 	{
 		return (0);
 	}
-	else if (a > b)
+	else if (a >= b)
 	{
 		return (1);
 	}
@@ -26,7 +26,7 @@ int is_prime_number(int n)
 	}
 	else if (n < 1)
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
