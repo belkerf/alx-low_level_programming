@@ -5,7 +5,7 @@ int check(char **a, int b)
 	{
 		return (b);
 	}
-	else if (**a != '\0')
+	else
 	{
 		return (check((++a), (++b)));
 	}
