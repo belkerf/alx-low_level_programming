@@ -1,13 +1,13 @@
 #include "main.h"
-int check(char *a, int b)
+int check(char **a, int b)
 {
-	if(*a == '\0')
+	if(**a == '\0')
 	{
 		return (b);
 	}
-	else if (*a != '\0')
+	else if (**a != '\0')
 	{
-		return (check((a + 1), (b + 1)));
+		return (check(*(a + 1), (b + 1)));
 	}
 }
 /**
@@ -17,6 +17,7 @@ int check(char *a, int b)
  */
 int _strlen_recursion(char *s)
 {
+	char **p = &s;
 
-	return (check(s, 1));
+	return (check(p, 1));
 }
