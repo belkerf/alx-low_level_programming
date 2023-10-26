@@ -1,14 +1,12 @@
 #include "main.h"
 int check(char **a, int b)
 {
-	if(**a == '\0')
-	{
-		return (b);
-	}
-	else
+	if (**a && **a != '\0')
 	{
 		return (check(++a, ++b));
 	}
+	else
+		return (b);
 }
 /**
  * _strlen_recursion - function that returns the length of a string.
