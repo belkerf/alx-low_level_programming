@@ -18,5 +18,5 @@ int check(char *a, int b)
 int _strlen_recursion(char *s)
 {
 
-	return (check(char *s, 1));
+	return (check(s, 1));
 }
