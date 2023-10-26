@@ -1,9 +1,9 @@
 #include "main.h"
 int check(char **a, int b)
 {
-	if (**a && **a != '\0')
+	if (a[b] && a[b] != '\0')
 	{
-		return (check(++a, ++b));
+		return (check(a, ++b));
 	}
 	else
 		return (b);
