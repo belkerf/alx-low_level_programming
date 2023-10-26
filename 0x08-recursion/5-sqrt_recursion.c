@@ -4,20 +4,23 @@
  * Return: the natural square of n;
  * @n : the number
  */
-int _sqrt_recursion(int n)
+int check(int a, int b)
 {
-	int i;
-
-	if (n == 0)
+	if (a * a == b)
 	{
-		return (0);
+		return (a);
 	}
-	else if (n < 0)
-		return (-1);
-	else if (i * i == n)
+	else (a * a > b)
 	{
-		return (i);
+		return(-1);
 	}
 	else
-		return (-1);
+		check(a + 1, b);
+}
+int _sqrt_recursion(int n)
+{
+	if (n == 0)
+		return (0);
+	else
+		check(1,n);
 }
