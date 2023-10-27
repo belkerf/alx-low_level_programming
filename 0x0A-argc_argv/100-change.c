@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		a = atoi(argv[1]);
-		if (a <= 0)
+		if (a = 0)
 		{
 			printf("0\n");
 		}
