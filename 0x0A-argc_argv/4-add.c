@@ -13,20 +13,22 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
-		return (0);
 	}
-	for (i = 1; i < argc; i++)
+	else
 	{
-		if (atoi(argv[i]) == 0)
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (atoi(argv[i]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				a += atoi(argv[i]);
+			}
 		}
-		else
-		{
-			a += atoi(argv[i]);
-		}
+		printf("%d\n", a);
 	}
-	printf("%d\n", a);
 	return (0);
 }
