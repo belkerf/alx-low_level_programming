@@ -26,10 +26,12 @@ char *str_concat(char *s1, char *s2)
 			*(p + i) = s1[i];
 		}
 	}
+	else
+		i = 0;
 	j = 0;
 	if (*s2 != '\0' && s2 != NULL)
 	{
-		for (; i < len; i++)
+		for (i; i < len; i++)
 		{
 			*(p + i) = s2[j];
 			j++;
