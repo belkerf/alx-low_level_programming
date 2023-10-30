@@ -9,8 +9,7 @@
 char *_strdup(char *str)
 {
 	char *arr;
-	int i;
-       unsigned long int len;
+       unsigned long int i, len;
 
 	len = (sizeof(str) * sizeof(char));
 
