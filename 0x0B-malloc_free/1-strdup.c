@@ -9,9 +9,9 @@
 char *_strdup(char *str)
 {
 	char *arr;
-       unsigned long int i, len;
+	unsigned long int i, len;
 
-	len = (sizeof(str) * sizeof(char));
+	len = ((sizeof(str) + 1) * sizeof(char)) + 1;
 
 	arr = malloc(len * sizeof(char));
 	for (i = 0; i < len; i++)
