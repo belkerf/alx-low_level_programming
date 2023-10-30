@@ -8,19 +8,22 @@
  */
 char *_strdup(char *str)
 {
-	char *arr;
-	unsigned long int i, len;
+	int len, i;
+	char *p;
 
-	len = (sizeof(str) * sizeof(char)) + 5;
 	if (str == NULL)
+		return (0);
+
+	for (len = 0; str[len]; len++)
 	{
-		return (NULL);
+		str[len];
 	}
-	arr = malloc(len * sizeof(char));
+	len++;
+	p = (char *)malloc(len * sizeof(char));
 	for (i = 0; i < len; i++)
 	{
-		arr[i] = *str;
-		str++;
+		*(p + i) = str[i];
 	}
-	return (arr);
+	*(p + i) = '\0';
+	return (p);
 }
