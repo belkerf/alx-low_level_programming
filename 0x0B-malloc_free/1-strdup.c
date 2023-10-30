@@ -8,5 +8,21 @@
  */
 char *_strdup(char *str)
 {
+	char *arr;
+	int i = 0;
 
+	if (*str == '\0')
+		return ('\0');
+	else
+	{
+		arr = malloc(sizeof(str));
+		while (i < sizeof(str))
+		{
+			arr[i] = str;
+			str++;
+			i++;
+		}
+		return (arr);
+		free(arr);
+	}
 }
