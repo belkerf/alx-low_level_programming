@@ -12,7 +12,10 @@ char *_strdup(char *str)
 	unsigned long int i, len;
 
 	len = (sizeof(str) * sizeof(char)) + 5;
-
+	if (*s == NULL)
+	{
+		return (NULL);
+	}
 	arr = malloc(len * sizeof(char));
 	for (i = 0; i < len; i++)
 	{
