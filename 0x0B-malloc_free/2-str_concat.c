@@ -19,16 +19,16 @@ char *str_concat(char *s1, char *s2)
 	p = (char *)malloc(len * sizeof(char));
 	if (p == NULL)
 		return (0);
-		for (i = 0; i < len1; i++)
-		{
-			*(p + i) = s1[i];
-		}
+	for (i = 0; i < len1; i++)
+	{
+		*(p + i) = s1[i];
+	}
 	j = 0;
-		for (; i < len; i++)
-		{
-			*(p + i) = s2[j];
-			j++;
-		}
+	for (; i < len; i++)
+	{
+		*(p + i) = s2[j];
+		j++;
+	}
 	*(p + i) = '\0';
 	return (p);
 }
