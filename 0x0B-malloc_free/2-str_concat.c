@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 		*(p + i) = '\0';
 		return (p);
 	}
-	else if (*s1 == '\0' || s1 == NULL)
+	else if (s1[0] == '\0' || s1 == NULL)
 	{
 		p = (char *)malloc(len2 * sizeof(char));
 		for (i = 0; i < len2 - 1; i++)
