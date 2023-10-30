@@ -14,7 +14,9 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 
 	for (len1 = 1; s1[len1 - 1]; len1++)
+
 	for (len2 = 1; s2[len2 - 1]; len2++)
+
 	len = len1 + len2 + 1;
 	if (*s2 == '\0' || s2 == NULL)
 	{
