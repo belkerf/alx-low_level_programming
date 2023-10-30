@@ -16,6 +16,26 @@ char *str_concat(char *s1, char *s2)
 	for (len1 = 1; s1[len1 - 1]; len1++)
 	for (len2 = 1; s2[len2 - 1]; len2++)
 	len = len1 + len2 + 1;
+	if (*s2 == '\0'|| s2 == NULL)
+	{
+		p = (char *)malloc(len1 *sizeof(char));
+		for (i = 0; i < len1 - 1; i++)
+		{
+			*(p + i) = s1[i];
+		}
+		*(p + i) = '\0';
+		return (p);
+	}
+	if (*s1 == '\0' || s1 == NULL)
+	{
+		p = (char *)malloc(len2 * sizeof(char));
+		for (i = 0; i < len2 - 1; i++)
+		{
+			*(p + i) = s[i];
+		}
+		*(p + i) = '\0';
+		return (p);
+	}
 	p = (char *)malloc(len * sizeof(char));
 	if (p == NULL)
 		return (0);
