@@ -13,9 +13,13 @@ char *str_concat(char *s1, char *s2)
 	int len1, len2, len, i, j;
 	char *p;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (0);
+		return (s2);
+	}
+	if (s2 == NULL)
+	{
+		return (s1);
 	}
 	for (len1 = 1; s1[len1 - 1]; len1++)
 	len1++;
