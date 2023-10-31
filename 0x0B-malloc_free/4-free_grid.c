@@ -12,7 +12,7 @@ void free_grid(int **grid, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		if (*grid)
+		if (grid)
 		{
 			for (j = 0; *grid[j]; j++)
 			{
