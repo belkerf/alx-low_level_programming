@@ -16,20 +16,20 @@ char *argstostr(int ac, char **av)
 
 	for (i = 1; i < ac; i++)
 	{
-		if (j = 0; av[j]; j++)
+		for (j = 0; av[j]; j++)
 		{
 			len++;
 		}
-		acc++;
+		ac++;
 	}
 	c = (char *)malloc(len * sizeof(char));
 	if (c == NULL)
 		return (NULL);
-	for (i = 0; i < len; arv++)
+	for (i = 0; i < len; av++)
 	{
-		if (*arv != '\0')
+		if (*av != '\0')
 		{
-			*( c + i) = *arv;
+			*( c + i) = *av;
 			i++;
 		}
 	}
