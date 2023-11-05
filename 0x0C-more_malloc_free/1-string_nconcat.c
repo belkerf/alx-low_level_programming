@@ -3,7 +3,7 @@
 /**
  * string_nconcat - function that concatenates two strings
  * @s1 : the first string
- * @S2 : the second.
+ * @s2 : the second.
  * @n : the number of bit we want to add from s2
  * Return: the concatenation.
  */
