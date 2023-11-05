@@ -26,14 +26,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < len; i++)
 	{
 		if (s1[i] == '\0')
-			continue;
+			*(arr + i) = s2[0];
 		else if (i < len1)
 		{
-			*arr = s1[i];
+			*(arr + i) = s1[i];
 		}
 		else
-			*arr = s2[i];
-		arr++;
+			*(arr + i) = s2[i - len1];
 	}
 	*arr = '\0';
 	return (arr);
