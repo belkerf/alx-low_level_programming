@@ -1,7 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 int main()
 {
-	printf("%s\n",__FILE__);
+	int i;
+	char *p;
+
+	p = __FILE__;
+	while (p[i])
+	{
+		_putchar(p[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
