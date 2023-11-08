@@ -6,6 +6,7 @@
  * @array: the array
  * @size : the size of array
  * @cmp: the poinbter
+ * Return: the number if true -1 if false
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
