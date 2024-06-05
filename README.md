@@ -1,2 +1,3 @@
 #this is a readme
-thsi is an update
+this is an update
+
